@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gelioo Spiderweb • Entry</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="page page-gate">
+  
+  <div class="glowbg"></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+  <main class="center">
+    <div class="gate glass">
+      <h1 class="gate-title">Gelioo Spiderweb</h1>
+      <p class="gate-sub">One question before you enter.</p>
+
+      <label class="gate-label" for="answer">What is my favorite color?</label>
+
+      <div class="gate-row">
+        <input id="answer" class="gate-input" placeholder="type here..." autocomplete="off" />
+        <button id="btn" class="gate-btn" type="button">Enter</button>
+      </div>
+
+      <p id="msg" class="gate-msg" aria-live="polite"></p>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+  <script>
+    const input = document.getElementById('answer');
+    const btn = document.getElementById('btn');
+    const msg = document.getElementById('msg');
+
+    function check() {
+      const v = (input.value || "").trim().toLowerCase();
+      if (!v) { msg.textContent = "Type your guess."; return; }
+      if (v === "green") {
+        msg.textContent = "Correct.";
+        setTimeout(() => location.href = "./personal.html", 450);
+      } else {
+        msg.textContent = "Wrong. Try again.";
+        input.select();
+      }
+    }
+    btn.addEventListener('click', check);
+    input.addEventListener('keydown', (e) => { if (e.key === "Enter") check(); });
+  </script>
+</body>
+</html>

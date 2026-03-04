@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🦋</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body{margin:0; overflow:hidden; background:#06070b;}
+    canvas{position:fixed; inset:0; width:100vw; height:100vh; display:block;}
+    .back{
+      position:fixed; left:18px; top:18px; z-index:10;
+      padding:10px 14px; border-radius:999px;
+      background:rgba(10,12,18,.55); border:1px solid rgba(173,187,255,.35);
+      color:#e9ecff; text-decoration:none; font-weight:700; letter-spacing:.2px;
+      backdrop-filter: blur(10px);
+    }
+    .back:hover{box-shadow:0 0 30px rgba(173,187,255,.22);}
+  </style>
+</head>
+<body>
+  <a class="back" href="./personal.html">← back</a>
+  <canvas id="world"></canvas>
+  <script src="./world.js"></script>
+</body>
+</html>

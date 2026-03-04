@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Journey</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  
+  <div class="glowbg"></div>
+<canvas id="stars"></canvas>
+  <div id="cursorTrail"></div>
+
+  
+  <audio id="bgm" src="./assets/saturn.mp3" loop autoplay playsinline></audio>
+<header class="topbar">
+    <div class="brand">
+      <div class="brand-title">Gelio</div>
+      <div class="brand-sub">Spiderweb</div>
+    </div>
+
+    <nav class="nav">
+      <a class="pill active" href="./index.html">CSS</a>
+      <a class="pill" href="./personal.html">Personal profile</a>
+      <a class="pill" href="./teachers.html">Teacher</a>
+      <a class="pill" href="./ark.html">ARK</a>
+      <a class="pill pill-glow" href="./world.html" title="🦋">🦋</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="glass big">
+      <h1 class="title2">Computer Systems Servicing</h1>
+      <p>
+        Computer Systems Servicing is a technical field that focuses on maintaining and supporting computer systems in real environments. It includes basic networking, system installation, proper configuration, and troubleshooting using correct procedures. CSS is not only about knowing tools. It is about learning how to think when something is failing. It is the discipline of checking the basics first, confirming evidence, and applying solutions that are safe and repeatable. In school settings, CSS becomes more real because the goal is not just to “make it work once.” The goal is to make the system stable enough for students, teachers, and tasks that depend on it.
+      </p>
+      <p>
+        In my experience, CSS training teaches patience and accuracy. Some errors look complicated but are solved by correct diagnosis. Some errors look small but become worse if handled carelessly. Because of that, I try to document what I do, not just the results. Documentation makes troubleshooting easier the next time, and it also proves that the solution was not random. I treat the process as important as the outcome.
+      </p>
+
+      <h2>Why I Chose CSS</h2>
+      <p>
+        I chose CSS because I have always been curious about technology and how systems behave under pressure. I also had a real influence from my brother who is in the IT field. Seeing that environment made me respect the idea of being useful, stable, and skilled. I chose a practical track because I want a path where effort directly becomes capability. At the same time, I remain honest about my deeper dream. I want science, especially astronomy, biology, and botany. Those fields inspire me in a way that feels personal. But I learned that opportunity can be limited, and I do not want to stay stuck waiting for the perfect path. So I chose IT as a strong present foundation while keeping the part of me that still wants to explore science in the future.
+      </p>
+
+      <h2>What I Can Do</h2>
+      <ul class="bullets">
+        <li>Install and configure operating systems with correct drivers and stable settings.</li>
+        <li>Diagnose boot problems and system errors using step-by-step verification.</li>
+        <li>Use Command Prompt tools and recovery options responsibly when systems fail to load normally.</li>
+        <li>Perform basic checks for hardware and software issues before applying changes.</li>
+        <li>Assist classmates by explaining procedures in a calm and clear way during hands-on work.</li>
+        <li>Support school technical needs when computers require setup, checking, or basic troubleshooting.</li>
+      </ul>
+
+      <h2>Documentation</h2>
+      <p>
+        The images below show my documentation and evidence from hands-on activities. I keep records because it helps me track what changed, what worked, and what improved after troubleshooting or configuration.
+      </p>
+
+      <div class="gallery">
+        <figure class="shot tilt">
+          <img src="./assets/css-1.jpg" alt="CSS documentation 1" />
+          <figcaption>Documentation 1</figcaption>
+        </figure>
+
+        <figure class="shot tilt">
+          <img src="./assets/css-2.jpg" alt="CSS documentation 2" />
+          <figcaption>Documentation 2</figcaption>
+        </figure>
+
+        <figure class="shot tilt">
+          <img src="./assets/css-3.jpg" alt="CSS documentation 3" />
+          <figcaption>Documentation 3</figcaption>
+        </figure>
+
+        <figure class="shot tilt">
+          <img src="./assets/css-4.jpg" alt="CSS documentation 4" />
+          <figcaption>Documentation 4</figcaption>
+        </figure>
+      </div>
+
+      <div class="btnrow">
+        <a class="btn btn-primary" href="./personal.html">Back to Personal</a>
+        <a class="btn" href="./world.html">🦋</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modalBackdrop" data-close="1"></div>
+    <div class="modalBody glass">
+      <button class="x" data-close="1">×</button>
+      <img id="modalImg" alt="Preview" />
+      <p id="modalCap" class="small"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>Gelio Spiderweb</span>
+  </footer>
+</body>
+</html>
